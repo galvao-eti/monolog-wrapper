@@ -1,0 +1,26 @@
+{
+    "name": "galvao-eti/monolog-wrapper",
+    "type": "library",
+    "license": "Apache-2.0",
+    "description": "A wrapper around Monolog that implements a few standards and provides a decent level of customization.",
+    "autoload": {
+        "psr-4": {
+            "GalvaoEti\\MonologWrapper\\": "src/"
+        }
+    },
+    "require": {
+        "galvao-eti/collection": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Er Galvão Abbott",
+            "email": "galvao@php.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}
