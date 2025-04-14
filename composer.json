@@ -9,7 +9,7 @@
         }
     },
     "require": {
-        "galvao-eti/collection": "^1.0"
+        "monolog/monolog": "^3.9"
     },
     "authors": [
         {
