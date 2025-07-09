@@ -1,11 +1,12 @@
 {
     "name": "galvao-eti/monolog-wrapper",
     "type": "library",
+    "version": "1.0",
     "license": "Apache-2.0",
     "description": "A wrapper around Monolog that implements a few standards and provides a decent level of customization.",
     "autoload": {
         "psr-4": {
-            "GalvaoEti\\MonologWrapper\\": "src/"
+            "MonologWrapper\\": "src/"
         }
     },
     "require": {
