@@ -14,7 +14,7 @@
 
 declare(strict_types = 1);
 
-namespace GalvaoEti\MonologWrapper;
+namespace MonologWrapper;
 
 use \DateTime;
 use \Exception;
@@ -28,7 +28,7 @@ use Monolog\{
 
 class MonologWrapper
 {
-    private static ?string $path = null;
+    public static ?string $path = null;
     public static ?Logger $instance = null;
 
     public static array $streams = [
@@ -42,7 +42,7 @@ class MonologWrapper
         self::$path = realpath($path);
 
         if (self::$path === false) {
-            throw new Exception($path . ' is not a valid directory.');
+            throw new Exception(self::$path . ' is not a valid directory.');
         }
 
         if (self::$instance === null) {
@@ -58,7 +58,7 @@ class MonologWrapper
                 }
 
                 if (!is_writable(self::$path)) {
-                    throw new Exception($path . ' is not writable.');
+                    throw new Exception(self::$path . ' is not writable.');
                 }
 
                 $time = new DateTime();
